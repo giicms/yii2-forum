@@ -1,7 +1,7 @@
 {
     "name": "giicms/yii2-forum",
     "description": "Yii2 Forum",
-    "homepage": "https://github.com/letyii/yii2-forum",
+    "homepage": "https://github.com/giicms/yii2-forum",
     "keywords": ["yii2","forum"],
     "license": "MIT",
     "minimum-stability": "beta",

@@ -11,7 +11,7 @@ class DefaultController extends Controller
     {
 
         // Redirects to the blogpost controller.
-        $this->render('index');
+        return $this->render('index');
     }
 
 }

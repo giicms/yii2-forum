@@ -1,6 +1,6 @@
 <?php
 
-namespace giicms\models;
+namespace giicms\forum\models;
 
 use Yii;
 use yii\behaviors\SluggableBehavior;

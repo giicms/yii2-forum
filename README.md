@@ -25,7 +25,7 @@ to the require section of your application's `composer.json` file.
 
  'modules' => [
         'forum' => [
-            'class' => 'giicms\category\Module',
+            'class' => 'giicms\forum\Module',
         ],
   ],
 ~~~

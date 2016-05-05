@@ -29,7 +29,7 @@ use yii\widgets\ActiveForm;
         <div class="x_panel">
             <?=
                     $form->field($model, 'category_id')
-                    ->checkboxList($model->getCategories('post'), [
+                    ->checkboxList($model->getCategories('forum'), [
                         'item' => function($index, $label, $name, $checked, $value) {
                             $check = $label['checked'] == 1 ? ' checked="checked"' : '';
                             $return = '<div class="checkbox"><label><input type="checkbox" name="' . $name . '" ' . $check . ' value="' . $label['id'] . '" >' . $label['title'] . '</label></div>';

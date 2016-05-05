@@ -45,6 +45,7 @@ class CategoryController extends Controller
         $categories = new Category();
         if ($categories->load(Yii::$app->request->post()))
         {
+            $categories->type = 'forum';
             $parent = Category::findOne($categories->parent_id);
             if (!empty($parent))
                 $categories->indent = $parent->indent + 1;

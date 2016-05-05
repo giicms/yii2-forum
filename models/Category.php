@@ -34,6 +34,20 @@ class Category extends \yii\db\ActiveRecord
     /**
      * @inheritdoc
      */
+    public function rules()
+    {
+        return [
+            [['title'], 'required', 'message' => '{attribute} không được rỗng.'],
+            [['parent_id', 'publish'], 'integer'],
+            ['publish', 'default', 'value' => self::PUBLISH_ACTIVE],
+            [['description'], 'string'],
+            [['title', 'slug', 'type'], 'string', 'max' => 255]
+        ];
+    }
+
+    /**
+     * @inheritdoc
+     */
     public function attributeLabels()
     {
         return [

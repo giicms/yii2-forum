@@ -34,7 +34,7 @@ class PostController extends Controller
     public function actionIndex()
     {
         $dataProvider = new ActiveDataProvider([
-            'query' => Post::find()->where(['type' => 'post']),
+            'query' => Post::find()->where(['type' => 'forum']),
         ]);
 
         return $this->render('index', [
